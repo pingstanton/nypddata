@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NYC Police Precincts</title>
+<script src="nycprecincts.js"></script>
+<meta name="robots" content="index,follow,noarchive" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="nypdmap.css">
+</head>
+<body><div class="wrp01">
+<div id="info">
+<h1>NEW&nbsp;YORK&nbsp;CITY CRIME&nbsp;DATA BY&nbsp;POLICE&nbsp;PRECINCT</h1>
+<div id="credit">
+<p><strong>DATA&nbsp;70600&nbsp;/&nbsp;DHUM&nbsp;70600 - INTRODUCTION&nbsp;TO&nbsp;JAVASCRIPT</strong><br />
+Instructor: Stephen&nbsp;Zweibel</p>
+<p><strong>CUNY&nbsp;GRADUATE CENTER</strong> &#149; 365&nbsp;5th&nbsp;Ave, New&nbsp;York, NY&nbsp;10016</p>
+<p><strong>MATTHEW STANTON</strong> &#149; <a href="mailto:mstanton@gradcenter.cuny.edu">mstanton@gradcenter.cuny.edu</a></p>
+<p><a href="https://github.com/pingstanton/DATA-70600-INTRO-TO-JAVASCRIPT/nypdmap">https://github.com/pingstanton/DATA-70600-INTRO-TO-JAVASCRIPT/nypdmap</a>
+</div>
+<div id="crimstats">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td class="t01" colspan="6">Police Precinct #78</td>
+</tr>
+<tr>
+<td class="s01" colspan="6">Borough: Brooklyn</td>
+</tr>
+<tr>
+<td class="h01">FELONY&nbsp;CRIME</td>
+<td class="h02">2018</td>
+<td class="h02">2019</td>
+<td class="h02">2020</td>
+<td class="h02">2021</td>
+<td class="h02">2022</td>
+</tr>
+<tr>
+<td class="c01">MURDER&nbsp;&amp; MANSLAUGHTER</td>
+<td class="c02">0</td>
+<td class="c02">0</td>
+<td class="c02">2</td>
+<td class="c02">1</td>
+<td class="c02">5</td>
+</tr>
+<tr>
+<td class="c01">RAPE</td>
+<td class="c02">12</td>
+<td class="c02">11</td>
+<td class="c02">9</td>
+<td class="c02">11</td>
+<td class="c02">10</td>
+</tr>
+<tr>
+<td class="c01">ROBBERY</td>
+<td class="c02">81</td>
+<td class="c02">99</td>
+<td class="c02">95</td>
+<td class="c02">107</td>
+<td class="c02">146</td>
+</tr>
+<tr>
+<td class="c01">FELONY ASSAULT</td>
+<td class="c02">81</td>
+<td class="c02">99</td>
+<td class="c02">95</td>
+<td class="c02">107</td>
+<td class="c02">146</td>
+</tr>
+<tr>
+<td class="c01">BURGLARY</td>
+<td class="c02">106</td>
+<td class="c02">104</td>
+<td class="c02">116</td>
+<td class="c02">149</td>
+<td class="c02">147</td>
+</tr>
+<tr>
+<td class="c01">GRAND LARCENY</td>
+<td class="c02">622</td>
+<td class="c02">504</td>
+<td class="c02">497</td>
+<td class="c02">372</td>
+<td class="c02">638</td>
+</tr>
+<tr>
+<td class="c01">G.&nbsp;LRCY. OF MOTOR&nbsp;VEHICLE</td>
+<td class="c02">68</td>
+<td class="c02">40</td>
+<td class="c02">74</td>
+<td class="c02">71</td>
+<td class="c02">123</td>
+</tr>
+<tr>
+<td class="c03">TOTALS</td>
+<td class="c04">864</td>
+<td class="c04">830</td>
+<td class="c04">774</td>
+<td class="c04">911</td>
+<td class="c04">1197</td>
+</tr>
+</table>
+</div>
+
+</div>
+<div id="map"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="nypdmap.js"></script>
+</div></body>
+</html>

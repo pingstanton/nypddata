@@ -1,0 +1,107 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+DATA 70600 / DHUM 70600 - INTRODUCTION TO JAVASCRIPT
+Instructor: Stephen Zweibel
+
+CUNY GRADUATE CENTER
+365 5th Ave, New York, NY 10016
+
+MATTHEW STANTON | mstanton@gradcenter.cuny.edu
+https://github.com/pingstanton/DATA-70600-INTRO-TO-JAVASCRIPT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body {
+	background-color: #000099; 
+	padding: 10px 0px 40px 0px; 
+	margin: 0; 
+	color: #000; 
+	font: normal 14px/1.2em calibri, arial, helvetica, sans-serif;
+	line-height: 1.0;
+	text-align: center;
+	}
+
+a:link {color: #009; text-decoration: none; border-bottom: 0px solid #fff;}
+a:visited {color: #009; text-decoration: none; border-bottom: 0px solid #fff;}
+a:hover  {color: #33f; text-decoration: none; border-bottom: 0px solid #33f;}
+a:active {color: #009; text-decoration: none; border-bottom: 0px solid #fff;}
+
+a.btn:link {text-decoration: none; border: 0px;}
+a.btn:visited {text-decoration: none; border: 0px;}
+a.btn:hover {text-decoration: none; border: 0px;}
+a.btn:active {text-decoration: none; border: 0px;}
+
+.wrp01 {
+	margin: 15px 30px;
+	padding: 0; 
+	text-align: center;
+	}
+
+#info {
+	float: left;
+	width: 38%;
+	height: 92%;
+	min-height: 92vh;
+    text-align: center;
+	border-radius: 30px;
+	margin: 0; padding: 0; 
+	text-align: left; 
+	background-color: #ffffff; 
+	box-shadow: 5px 5px 50px #000;
+	z-index: 2;
+	}
+
+#map {
+	float: right;
+	width: 60%;
+	height: 92%;
+	min-height: 92vh;
+    text-align: center;
+	border-radius: 30px;
+	margin: 0; padding: 0; 
+	text-align: left; 
+	background-color: #eeeeee; 
+	box-shadow: 5px 5px 50px #000;
+	z-index: 1;
+	}
+
+#neighborhoods {
+	margin: 10px 0;
+    columns: 100px 3
+}
+
+h1 {width: 75%; margin: 20px 20px 0 20px; padding: 0; font: normal 30px/1.0em 'Josefin Sans', sans-serif; letter-spacing: -1px; text-align: left;}
+
+#credit {
+	margin: 20px; padding: 5px 0; 
+	border-top: 1px solid #999; border-bottom: 1px solid #999;
+	color: #666;
+	font-size: 13px;}
+
+#credit p {margin: 4px 0; padding: 0;}
+
+#crimstats {
+	margin: 20px; padding: 10px 0; 
+	color: #000;
+	font-size: 13px;}
+
+#crimstats .t01 {padding: 0; text-align: left; border-bottom: 3px solid #fff; font: bold 25px/1.0em calibri, arial, helvetica; color: #2e78fa; background-color: #fff;}
+#crimstats .s01 {padding: 0 0 7px 0; text-align: left; border-bottom: 3px solid #fff; font: italic 18px/1.0em calibri, arial, helvetica; color: #999; background-color: #fff;}
+#crimstats .h01 {padding: 7px 5px; text-align: left; border-bottom: 3px solid #fff; font: bold 16px/1.0em calibri, arial, helvetica; color: #fff; background-color: #333;}
+#crimstats .h02 {padding: 7px 5px; text-align: center; border-bottom: 3px solid #fff; font: bold 16px/1.0em calibri, arial, helvetica; color: #fff; background-color: #333;}
+#crimstats .c01 {padding: 10px 5px; text-align: left; border-bottom: 1px solid #999;}
+#crimstats .c02 {padding: 10px 5px; text-align: center; border-bottom: 1px solid #999;}
+#crimstats .c03 {padding: 10px 5px; text-align: left; border-bottom: 1px solid #999; font-weight: bold; background-color: #e0e0e0;}
+#crimstats .c04 {padding: 10px 5px; text-align: center; border-bottom: 1px solid #999; font-weight: bold; background-color: #e0e0e0;}
+
+hr {
+    margin: 10px 0 5px 0;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.33), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.33), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.33), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.33), rgba(0,0,0,0)); 
+}
+
+
