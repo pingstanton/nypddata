@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NYC Felony Crime Data By Police Precinct, 2018-2022</title>
+<script src="nycprecincts.js"></script>
+<meta name="robots" content="index,follow,noarchive" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="nypdmap.css">
+</head>
+<body><div class="wrp01"><a name="top"></a>
+<div id="info">
+<h1>NEW&nbsp;YORK&nbsp;CITY FELONY&nbsp;CRIME&nbsp;DATA BY&nbsp;POLICE&nbsp;PRECINCT, <nobr>2018-2022</nobr></h1>
+<a href="#about"><button>About This Project...</button></a> 
+</div>
+<div id="map"></div>
+<div id="about"><a name="about"></a>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<small>DESIGN BY</small><br /><strong>MATTHEW&nbsp;STANTON</strong><br />
+<a href="mailto:mstanton@gradcenter.cuny.edu">mstanton@gradcenter.cuny.edu</a><br />
+<hr />
+<a href="https://github.com/pingstanton/nypddata/">github.com/pingstanton/nypddata</a><br />
+<a href="https://chimaboo.com/nypddata/">chimaboo.com/nypddata</a><br />
+</td>
+<td valign="top">
+<strong>DATA&nbsp;70600 / DHUM&nbsp;70600<br />
+INTRODUCTION&nbsp;TO JAVASCRIPT</strong><br />
+<hr />
+Instructor: Stephen Zweibel [<a href="https://www.gc.cuny.edu/people/stephen-zweibel" target="_blank">info</a>]<br />
+<hr />
+<a href="https://zweibel.net/Javascripting-Graduate-Student/" target="_blank">Course Overview</a><br />
+</td>
+<td valign="top">
+<strong>CUNY&nbsp;GRADUATE&nbsp;CENTER</strong><br />
+<a href="https://www.gc.cuny.edu/data-analysis-and-visualization" target="_blank">Data Analysis and Visualization Program</a><br />
+365&nbsp;5th&nbsp;Ave.,<br />
+New&nbsp;York,&nbsp;NY&nbsp;10016<br />
+</td></tr>
+</table><br />
+
+<div id="aboutdetail">
+
+<h3>Key To Noted Crime Stats</h3>
+
+<p>The NYPD Seven Major Felony Offenses includes the following:</p>
+
+<ul>
+<li> Murder & Non-Negligent Manslaughter</li>                            
+<li> Rape</li>
+<li> Robbery</li>
+<li> Felony Assault</li>
+<li> Burglary</li>
+<li> Grand Larceny</li>
+<li> Grand Larceny Of Motor Vehicle</li>           
+</ul>
+
+<h3>About This Project</h3>
+
+<p>This project focuses on <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/historical.page" target="_blank">New York City's Felony Crime Data from 2018-2023</a> across all the city's police precincts for several reasons, particularly in the context of data visualization and analysis.</p>
+
+<p><strong>Urban Dynamics and Spatial Patterns:</strong> New York City is a highly dynamic and densely populated urban environment. Analyzing felony crime data can reveal spatial patterns and trends, helping researchers understand how crime is distributed across different neighborhoods and precincts.</p>
+
+<p><strong>Policy Implications:</strong> Examining crime data over a span of several years can provide insights into the effectiveness of various crime prevention and law enforcement policies implemented by the city. This information can be crucial for policymakers to assess the impact of their initiatives.</p>
+
+<p><strong>Resource Allocation:</strong> By understanding crime patterns in different precincts, law enforcement agencies can allocate resources more effectively. Data visualization can help identify areas with high crime rates, enabling law enforcement to prioritize and deploy resources where they are most needed.</p>
+
+<p><strong>Community Engagement:</strong> Visualization tools can be used to communicate complex crime data to the general public. This can foster community engagement and awareness, empowering residents to actively participate in crime prevention efforts and understand the safety dynamics of their neighborhoods.</p>
+
+<p><strong>Comparative Analysis:</strong> Comparing crime data across different precincts can reveal disparities and similarities. Understanding why certain precincts experience higher or lower crime rates can lead to more targeted interventions and policies.</p>
+
+<p><strong>Predictive Modeling:</strong> The dataset spanning multiple years provides a rich source for predictive modeling. Machine learning algorithms can be applied to forecast potential crime hotspots, allowing for proactive measures to be taken in those areas.</p>
+
+<p><strong>Impact of External Factors:</strong> Examining crime data across multiple years allows for the investigation of the impact of external factors such as economic conditions, demographic changes, or social initiatives. This broader context can contribute to a more nuanced understanding of crime dynamics.</p>
+
+<p><strong>Interdisciplinary Insights:</strong> Collaborating with other disciplines, such as sociology, criminology, and public policy, can provide a holistic understanding of the factors influencing crime rates. Data visualization becomes a powerful tool for communicating findings across diverse fields.</p>
+
+<h3>About This Data Set</h3>
+
+<p>From the <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/historical.page" target="_blank"><strong>New York Police Department's Historical New York City Crime Data</strong></a>:</p>
+
+<blockquote>
+<p>The New York City Police Department records reported crime and offense data in accordance with the New York State Penal Law and other New York State laws. For statistical presentation purposes the numerous law categories and subsections are summarized by law class: felony, misdemeanor and violation. These legal categories are then subdivided into broad crime and offense categories, e.g., Felonious Assault, Grand Larceny, Misdemeanor Criminal Mischief, etc. The tabular data presented here compile reported crime and offense data recorded by the New York City Police Department from 2000 through 2015. Separate tables are presented for the seven major felonies, other felony crimes, misdemeanors, and violations.</p>
+<p>...</p>
+<p>The data presented in the tables are not organized in the FBI's Uniform Crime Report (UCR) format and are not directly comparable to that format. The FBI reorganizes the New York State Penal Law categories to establish national statistics that can be compared across all the states with their various penal laws. The data is, however, classified and scored in the same fashion as the UCR. Reported incidents are first classified to identify all the crimes that may have occurred, then scored to identify the most serious offense. The recorded crime classification for each crime report is the most serious offense. Attempts to commit a crime are recorded as the crime (note: attempted murders are recorded as felonious assaults).</p>
+</blockquote>
+
+<p>For more information, see <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/historical.page" target="_blank">Citywide Crime Statistics on NYC.gov</a>.</p>
+
+
+</div><a href="#top"><button>^ BACK TO TOP</button></a> 
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="nypdmap.js"></script>
+</div></body>
+</html>
