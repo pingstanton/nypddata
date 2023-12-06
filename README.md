@@ -15,6 +15,8 @@ CUNY GRADUATE CENTER
 Data Analysis and Visualization Program
 365 5th Ave., New York, NY 10016
 
+![nypddatascreenshot](https://github.com/pingstanton/nypddata/assets/108839493/7e0730fb-3fb0-47be-ba4d-0181444d2d45)
+
 ## Key To Noted Crime Stats
 
 The NYPD Seven Major Felony Offenses includes the following:
