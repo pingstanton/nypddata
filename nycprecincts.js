@@ -7,7 +7,16 @@ CUNY GRADUATE CENTER
 365 5th Ave, New York, NY 10016
 
 MATTHEW STANTON | mstanton@gradcenter.cuny.edu
-https://github.com/pingstanton/DATA-70600-INTRO-TO-JAVASCRIPT
+https://github.com/pingstanton/
+
+Adapted from seven-major-felony-offenses-by-precinct-2000-2022.xls
+
+Data edited and merged into nycprecincts.js file
+
+Source: 
+New York Police Department's Historical New York City Crime Data
+https://www.nyc.gov/site/nypd/stats/crime-statistics/historical.page
+https://www.nyc.gov/assets/nypd/downloads/excel/analysis_and_planning/historical-crime-data/seven-major-felony-offenses-2000-2022.xls
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
