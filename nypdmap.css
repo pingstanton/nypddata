@@ -7,7 +7,7 @@ CUNY GRADUATE CENTER
 365 5th Ave, New York, NY 10016
 
 MATTHEW STANTON | mstanton@gradcenter.cuny.edu
-https://github.com/pingstanton/DATA-70600-INTRO-TO-JAVASCRIPT
+https://github.com/pingstanton/
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -91,6 +91,7 @@ button:hover {
 #map table {width: 100%; borders: 0;}
 #map td {border: 0; text-align: center; padding: 1px 10px 1px 0px; font: normal 13px/1.0em calibri, arial, helvetica, sans-serif; color: #333; border-bottom: 1px solid #ccc;}
 #map .t {text-align: left;}
+#map .r {padding: 4px 0; text-align: right;}
 
 #about {
 	width: 100%;
